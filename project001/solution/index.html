@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-slate-300 min-h-screen flex justify-center items-center">
+    <section class="bg-slate-50 p-7 rounded-lg rounded-br-3xl">
+      <div class="flex gap-3">
+        <label class="flex flex-col gap-2">
+          <span class="font-bold text-xs text-gray-400 tracking-widest"
+            >DAY</span
+          >
+          <input
+            type="text"
+            class="w-20 border rounded-md border-neutral-200 px-3 py-2 font-bold"
+            placeholder="DD"
+          />
+        </label>
+        <label class="flex flex-col gap-2">
+          <span class="font-bold text-xs text-gray-400 tracking-widest"
+            >MONTH</span
+          >
+          <input
+            type="text"
+            class="w-20 border rounded-md border-neutral-200 px-3 py-2 font-bold"
+            placeholder="MM"
+          />
+        </label>
+        <label class="flex flex-col gap-2">
+          <span class="font-bold text-xs text-gray-400 tracking-widest"
+            >YEAR</span
+          >
+          <input
+            type="text"
+            class="w-20 border rounded-md border-neutral-200 px-3 py-2 font-bold"
+            placeholder="YYYY"
+          />
+        </label>
+      </div>
+      <div class="flex items-center mt-2 relative h-20">
+        <div class="border-t border-stone-300 w-full md:w-80"></div>
+        <button
+          class="absolute left-1/2 md:left-72 -translate-x-1/2 rounded-full w-14 h-14 flex items-center justify-center text-2xl bg-purple-500 hover:bg-purple-400 text-white"
+        >
+          +
+        </button>
+      </div>
+      <div>
+        <p class="text-6xl font-black text-zinc-700">
+          <span class="text-purple-500">38</span>years
+        </p>
+        <p class="text-6xl font-black text-zinc-700">
+          <span class="text-purple-500">3</span>months
+        </p>
+        <p class="text-6xl font-black text-zinc-700">
+          <span class="text-purple-500">26</span>days
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
